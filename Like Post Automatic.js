@@ -2,7 +2,7 @@
 (() => {
     setTimeout(function continueWhenPageLoad() {
         var articles = document.getElementsByClassName('_1ekf');
-        //console.log("Sô lượng bài viết: " + articles.length)
+        
         var statusLike = document.getElementsByClassName('img _mpx img _4s0y');
         let articleIndex = 0;
         setTimeout(function clickNextButton() {
@@ -11,11 +11,11 @@
                     if (j == 0) {
                         statusLike[j].click();
                     }
-                }
-               // console.log("Vị trí bài viết:"+articleIndex+" Vị trí lặp: "+articles.length)
+              }
+             console.log("Đã Like bài viết thứ "+articleIndex+" trong tổng: "+articles.length +" bài viết")
             if (articleIndex>articles.length) {
                 window.scrollTo(0, document.body.scrollHeight);
-                setTimeout(continueWhenPageLoad, 1000);
+                setTimeout(continueWhenPageLoad, 500);
                 return;
             }
             articleIndex++;
