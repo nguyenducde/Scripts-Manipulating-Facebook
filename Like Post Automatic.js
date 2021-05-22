@@ -15,7 +15,7 @@
                // console.log("Vị trí bài viết:"+articleIndex+" Vị trí lặp: "+articles.length)
             if (articleIndex>articles.length) {
                 window.scrollTo(0, document.body.scrollHeight);
-                setTimeout(continueWhenPageLoad, 0);
+                setTimeout(continueWhenPageLoad, 1000);
                 return;
             }
             articleIndex++;
