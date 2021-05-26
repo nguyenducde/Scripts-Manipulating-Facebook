@@ -1,3 +1,5 @@
+/** https://m.facebook.com/friends/center/requests/outgoing/?hc_location=ufi#friends_center_main */
+
 (() => {
      setTimeout(function continueWhenPageLoad() {
          listFriend = document.getElementsByClassName("_55sr");
@@ -24,3 +26,5 @@
         }); 
     }, 0);
 })();
+/**Code By Nguyễn Đức Đề */
+/** https://www.facebook.com/nguyenducde.meo */
