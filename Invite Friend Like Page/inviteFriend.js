@@ -12,14 +12,7 @@
                 count++;
                 console.log("Đã mời " + count + " bạn like page trong số " + listFriend.length);
             }
-           
-            if (buttonIndex > listFriend.length)
-            {
-                
-                setTimeout(continueWhenPageLoad, 7000);
-                return;
-            }
-             window.scrollTo(0, document.body.scrollHeight);
+            window.scrollTo(0, document.body.scrollHeight);
             buttonIndex++;
             setTimeout(clickNextButton, 10000);
            

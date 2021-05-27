@@ -12,14 +12,7 @@
                 console.log("Hủy lời mời thứ " + count + " Trong tổng " + listFriend.length);
                 count++;
             }
-           
-            if (buttonIndex > listFriend.length)
-            {
-                
-                setTimeout(continueWhenPageLoad, 500);
-                return;
-            }
-             window.scrollTo(0, document.body.scrollHeight);
+            window.scrollTo(0, document.body.scrollHeight);
             buttonIndex++;
             setTimeout(clickNextButton, 1000);
            

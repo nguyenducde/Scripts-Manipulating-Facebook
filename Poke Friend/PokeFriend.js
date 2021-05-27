@@ -11,14 +11,7 @@
                 count++;
                 console.log("Đã chọc " + count + "  trong số " + listFriend.length);
             }
-           
-            if (buttonIndex > listFriend.length)
-            {
-                
-                setTimeout(continueWhenPageLoad, 300);
-                return;
-            }
-             window.scrollTo(0, document.body.scrollHeight);
+            window.scrollTo(0, document.body.scrollHeight);
             buttonIndex++;
             setTimeout(clickNextButton, 10);
            
