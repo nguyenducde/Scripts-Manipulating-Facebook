@@ -4,19 +4,17 @@
      setTimeout(function continueWhenPageLoad() {
          listFriend = document.getElementsByClassName("_55sr");
          let buttonIndex = 0;
+         let count = 0;
         setTimeout(function clickNextButton() {
             if (listFriend[buttonIndex].innerHTML == "Thêm bạn bè")
             {
                 listFriend[buttonIndex].click();
+                console.log("Đã add số " + count + " trong tổng " + listFriend.length);
+                count++;
             }
-            if (buttonIndex > listFriend.length)
-            {
-                 window.scrollTo(0, document.body.scrollHeight);
-                setTimeout(continueWhenPageLoad, 1000);
-                return;
-                }
+    
             buttonIndex++;
-            setTimeout(clickNextButton, 2000);
+            setTimeout(clickNextButton, 200);
            
         }); 
     }, 0);
@@ -30,10 +28,13 @@
          listFriend = document.getElementsByClassName("_55sr");
          var viewMore = document.getElementsByClassName('title mfsm fcl');
          let buttonIndex = 0;
+         let count = 0;
         setTimeout(function clickNextButton() {
             if (listFriend[buttonIndex].innerHTML == "Thêm bạn bè")
             {
                 listFriend[buttonIndex].click();
+                console.log("Đã add số " + count + " trong tổng " + listFriend.length);
+                count++;
             }
               for (var i = 0; i <viewMore.length; i++)
               { 
@@ -44,16 +45,16 @@
             if (buttonIndex > listFriend.length)
             {   
                 //window.scrollTo(0, document.body.scrollHeight);
-                setTimeout(continueWhenPageLoad, 1000);
+                setTimeout(continueWhenPageLoad, 500);
                 return;
             }
             buttonIndex++;
             setTimeout((
             ) => {
               window.scrollTo(0, document.body.scrollHeight);  
-            },2000)
+            },500)
             
-            setTimeout(clickNextButton, 2000);
+            setTimeout(clickNextButton, 500);
            
         }); 
     }, 0);
